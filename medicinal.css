@@ -1,0 +1,969 @@
+/* ===========================
+   GLOBAL STYLE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+body{
+    background:#f5fff8;
+    color:#333;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* ===========================
+        HEADER
+=========================== */
+
+
+.header{
+
+    background:#075e36;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+}
+
+
+.logo{
+
+    font-size:32px;
+    font-weight:bold;
+
+}
+
+
+
+nav a{
+
+    margin-left:20px;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#8affb4;
+
+}
+
+
+
+
+
+
+/* ===========================
+        HERO SECTION
+=========================== */
+
+
+.hero{
+
+    height:80vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    ),
+    url("../images/plants.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    color:white;
+
+}
+
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+
+.hero h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    margin:25px 0;
+
+    line-height:1.7;
+
+}
+
+
+
+
+/* BUTTON */
+
+
+.btn{
+
+    display:inline-block;
+
+    background:#0b9b50;
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:30px;
+
+    margin:10px;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:#064b2b;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+        COMMON SECTIONS
+=========================== */
+
+
+section{
+
+    padding:70px 8%;
+
+}
+
+
+h2{
+
+    text-align:center;
+
+    color:#075e36;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+
+/* ===========================
+        CARDS
+=========================== */
+
+
+.plant-card{
+
+background:
+
+rgba(255,255,255,0.8);
+
+backdrop-filter:blur(10px);
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+
+.plant-card:hover{
+
+transform:
+
+translateY(-15px)
+scale(1.03);
+
+box-shadow:
+
+0 25px 50px rgba(0,0,0,.25);
+
+}
+
+
+
+/* ===========================
+        CATEGORY
+=========================== */
+
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.category-card{
+
+
+    background:#087f45;
+
+    color:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-size:18px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.category-card:hover{
+
+    background:#064326;
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+        SEARCH
+=========================== */
+
+
+.search-section{
+
+    background:#e7fff0;
+
+    text-align:center;
+
+}
+
+
+
+.search-box{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.search-box input{
+
+    width:400px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:30px 0 0 30px;
+
+    font-size:16px;
+
+}
+
+
+
+.search-box button{
+
+    padding:18px 30px;
+
+    border:none;
+
+    background:#087f45;
+
+    color:white;
+
+    border-radius:0 30px 30px 0;
+
+}
+
+
+
+
+
+
+/* ===========================
+        STATS
+=========================== */
+
+
+.stats{
+
+    background:#075e36;
+
+    color:white;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    text-align:center;
+
+}
+
+
+
+.stats h1{
+
+    font-size:50px;
+
+}
+
+
+
+
+
+
+/* ===========================
+        GALLERY
+=========================== */
+
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.gallery-grid img{
+
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+
+}
+
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+        CONTACT FORM
+=========================== */
+
+
+.contact-form{
+
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px #ddd;
+
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+
+}
+
+
+
+.contact-form textarea{
+
+    height:150px;
+
+}
+
+
+
+.contact-form button{
+
+
+    background:#087f45;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+}
+
+
+
+
+
+/* ===========================
+        FOOTER
+=========================== */
+
+
+footer{
+
+
+    background:#042719;
+
+    color:white;
+
+    padding:50px 8% 20px;
+
+
+}
+
+
+
+.footer-container{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+
+}
+
+
+.footer-container h3{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.footer-container a{
+
+    display:block;
+
+    color:#ddd;
+
+    margin:10px 0;
+
+}
+
+
+
+.footer-container a:hover{
+
+    color:#7cffaa;
+
+}
+
+
+
+.footer-container p{
+
+    line-height:1.8;
+
+    color:#ddd;
+
+}
+
+
+
+.copyright{
+
+    text-align:center;
+
+    border-top:1px solid gray;
+
+    padding-top:20px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.header{
+
+    flex-direction:column;
+
+}
+
+
+nav{
+
+    margin-top:20px;
+
+}
+
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+
+.plant-container,
+.intro-box,
+.benefit-container,
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.category-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+.category-grid,
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.search-box{
+
+    flex-direction:column;
+
+}
+
+
+.search-box input,
+.search-box button{
+
+    width:100%;
+
+    border-radius:30px;
+
+    margin:5px 0;
+
+}
+
+
+}
+
+/* =========================
+   PROFESSIONAL HERO SECTION
+========================= */
+
+
+.hero{
+
+    height:92vh;
+
+    position:relative;
+
+    background-image:
+
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+
+    url("../images/plants.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:8%;
+
+    color:white;
+
+}
+
+
+
+
+.hero-content{
+
+    max-width:650px;
+
+    animation:fadeIn 1.2s ease;
+
+}
+
+
+
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#f1f1f1;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+/* HERO BUTTON */
+
+
+.hero .btn{
+
+    background:#10a651;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-weight:600;
+
+    display:inline-block;
+
+    transition:.3s;
+
+}
+
+
+
+.hero .btn:hover{
+
+    background:#08763b;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/* DARK IMAGE EFFECT */
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+        circle,
+        transparent 20%,
+        rgba(0,0,0,.5)
+    );
+
+    pointer-events:none;
+
+}
+
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+
+/* Animation */
+
+@keyframes fadeIn{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+/* MOBILE VIEW */
+
+@media(max-width:768px){
+
+
+.hero{
+
+    height:80vh;
+
+    padding-left:5%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+
+}
+
+.glass{
+
+background:
+
+rgba(255,255,255,.7);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+padding:30px;
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.1);
+
+}
+section{
+
+animation:showSection linear;
+
+animation-timeline:view();
+
+animation-range:entry 10% cover 30%;
+
+}
+
+
+
+@keyframes showSection{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

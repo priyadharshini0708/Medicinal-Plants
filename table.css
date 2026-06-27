@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+h6{
+    color: aquamarine;
+    font-size: large;
+}
+.hellostyle{
+    color: aqua;
+}
+#foot{
+    color: aliceblue;
+    
+}
+h6 , .hellostyle , #foot{
+    font-size: 60px;
+}
+body{
+    height: 100vh;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKxLRYcJGiX61XSj1yGj3nPBuP_DmmTn_Ssg&s ");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.box{
+
+    width: 300px;
+    height: 100px;
+    border: 10px solid red;
+   /* padding: 50px; */
+    padding-left: 100px;
+    margin: 50px;
+    margin-bottom: 700px;
+}
+p{
+    font-size: 24px;
+    font-weight: 100;
+    /* font-variant: small-caps; */
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    text-decoration:line-through;
+    text-align:center;
+
+    /* font-style: italic; */
+}
+ /* .box {
+  font-family: "Puritan", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}*/

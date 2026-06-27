@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Priya {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 60px;
+  background-color: #0a2a43;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar - row1 */
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.col1 {
+  width: 30%;
+}
+
+.col2 {
+  width: 70%;
+}
+
+.AMMU{
+  color: #ffcc00;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.nav h5 {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.nav h5:hover {
+  color: #ffcc00;
+}
+
+/* Row2 - Welcome text + Profile */
+.row2 {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  margin-bottom: 70px;
+  align-items: center;
+}
+
+.col3, .col4 {
+  width: 50%;
+}
+
+.col3 h5 {
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.col3 h2 {
+  font-size: 42px;
+  color: snow;
+  margin-bottom: 20px;
+}
+
+.col3 p {
+  color: snow;
+  font-size: 16px;
+  word-spacing: 2px;
+}
+
+.col4 img {
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.col4 h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.col4 p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Row3 - Big image + Details */
+.row3 {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.col5, .col6 {
+  width: 50%;
+}
+
+.col5 img {
+  width: 380px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.col6 h6 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Table vertical layout */
+.details {
+  color: white;
+  border-spacing: 50px 12px;
+  margin: 20px 0;
+}
+
+.details th {
+  text-align: left;
+  padding-right: 50px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.details td {
+  color: #ddd;
+  font-size: 16px;
+}
+
+/* Pink button below table */
+.click {
+  margin-top: 20px;
+  padding: 12px 32px;
+  background-color: #ff3b82;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.click:hover {
+  background-color: #ff1a66;
+}
